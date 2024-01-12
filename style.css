@@ -1,0 +1,176 @@
+/*
+Colors:
+dark: #252e42
+mid: #3a5089
+light: #c5e7f4
+
+Useful classes:
+flex-wrap: wrap;
+flex-direction: column;
+justify-content:center;
+align-items:center;
+
+*/
+/* Baseline Styles */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); /* font! */
+* {
+  box-sizing: border-box;
+}
+html,
+body { /* baseline styles for everything */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #c5e7f4;
+  color: #252e42;
+  scroll-behavior: smooth;
+}
+p { /* baseline styles for all text */
+  font-size: 18px;
+  line-height: 2;
+}
+a { /* baseline styles for all links */
+  text-decoration: underline;
+  color: #252e42;
+}
+.splash {
+  width: 100%;
+  min-height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+  padding: 10px;
+}
+.splash h1, .splash p, .splash h2 {
+  color: white;
+  text-align: center;
+
+  background: #252e42;
+  padding: 5px 15px;
+  
+  max-width: 800px;
+}
+
+.about {
+  width: 100%;
+  min-height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+  padding: 10px;
+}
+.about img {
+  width: 100%;
+  max-width: 800px;
+  object-fit: cover;
+  height: 300px;
+  margin: 20px 0;
+  box-shadow: 5px 5px 0px 0px #252e42;
+}
+.about p {
+  max-width: 800px;
+}
+.about h2 {
+  color:#252e42;
+  font-size: 40px;
+}
+.about h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom:0;
+}
+.about li {
+  font-size: 18px;
+  line-height: 2;
+}
+.staff {
+  color: white;
+  width: 100%;
+  min-height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+  padding: 10px;
+}
+.staff h2 {
+  font-size: 40px;
+}
+.staffContainer {
+  max-width: 800px;
+}
+.staffCard {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  margin: 20px 0;
+}
+.staffCard img {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  box-shadow: 5px 5px 0px 0px #fff;
+}
+.staffCard h3, .staffCard p {
+  margin: 0;
+}
+.staffCard div {
+  margin: 15px;
+  width: 635px;
+}
+.staffCard div .role {
+  color: #c5e7f4;
+  font-style: italic;
+  padding: 0;
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  .staffCard { flex-direction: column}
+  .staffCard div {
+  margin: 0;
+  width: unset;}
+}
+
+.contactBar {
+  color: white;
+  text-align: center;
+
+  background: #252e42;
+  padding: 5px 15px;
+  max-width: 800px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items:center;
+}
+.contactBar a {
+  cursor: pointer;
+}
+.contactBar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 5px;
+  transition: .2s;
+}
+.contactBar img:hover {
+  transform: scale(110%);
+
+}
